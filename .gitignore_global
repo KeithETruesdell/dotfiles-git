@@ -1,0 +1,110 @@
+###===================###
+### IDEs              ###
+###===================###
+.idea/
+
+
+###===================###
+### Executable        ###
+###===================###
+*.exe
+*.dll
+*.app
+*.bin
+*.dmg
+
+
+
+
+###===================###
+### Linux             ###
+###===================###
+# General
+*~
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+
+###===================###
+### macOS             ###
+###===================###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+
+###===================###
+### Windows           ###
+###===================###
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+
+###===================###
+### GIT WORKTREE      ###
+###===================###
+.worktrees
+.worktree
+
+# Office / Windows
+~$*
+
+
+###===================###
+### LANGUAGES         ###
+###===================###
+# asdf - tool version chain
+.tool-versions
+.tool-version
+
+# node - node version manager rc
+.nvmrc
+.node-version
+
+# python and lua
+package-lock.json
+
+# ruby
+.ruby-version
+rbenv
+.rbenv
