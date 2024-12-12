@@ -20,9 +20,9 @@
 ## Include Work configs
 # https://git-scm.com/docs/git-config
 # NOTE: not 100% this works as expected yet, most examples had a "work" and a "personal" directory
-[includeIf "hasconfig:remote.*.ena.net"]
+[includeIf "hasconfig:remote.*.url:*.ena.net"]
   path = ~/.dotfiles/git/work/.ena.gitconfig
-[includeIf "hasconfig:remote.*.zayo.com"]
+[includeIf "hasconfig:remote.*.url:*.zayo.com"]
   path = ~/.dotfiles/git/work/.zayo.gitconfig
 
 ## Third party tools (NOTE: do I still use these?)
@@ -34,3 +34,11 @@
 	cmd = /private/var/folders/_4/44d94rkd5dg9fcc8f9jx6ln00000gq/T/AppTranslocation/7A2DBDE2-E667-4FFA-BDC4-2562A82010EC/d/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 
+[http]
+  ssVerify = false
+
+[url "git@gitlab.ena.net:"]
+	insteadOf = https://gitlab.ena.net/
+
+[push]
+  autoSetupRemote = true
